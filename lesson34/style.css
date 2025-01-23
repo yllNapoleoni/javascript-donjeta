@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #circle {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s, top 0.3s, left 0.3s;
+  }
+  
+  #timer, #points {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    z-index: 10;
+  }
+  
+  #points {
+    top: 40px; /* Add some space between the timer and points display */
+  }
+  
